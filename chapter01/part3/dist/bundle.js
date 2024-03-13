@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log(579),console.log("haha"),console.log("你好")})();
+!function(){"use strict";var o={name:"tony",age:33};console.log(o),o.age=18,console.log(o),console.log(579),console.log("haha"),console.log("你好");var n=function(o,n){return o+n};n(123,456),n(1,2)}();
