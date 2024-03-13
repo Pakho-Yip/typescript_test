@@ -1,5 +1,9 @@
 // 引入一个包
 const path = require('path');
+// 引入html插件
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+// 引入clean插件
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 // webpack中的所有的配置信息都应该写在module.exports中
 module.exports = {
@@ -28,5 +32,20 @@ module.exports = {
                 exclude: /node_modules/
             }
         ]
-    }
+    },
+
+    // 配置webpack插件
+    plugins:[
+        new CleanWebpackPlugin(),
+        new HTMLWebpackPlugin({
+            // title: "这是一个自定义的title"
+            template:"./src/index.html"
+        })
+    ],
+    
+    // 用来设置引用模块
+    resolve: {
+        extensions:['.ts','.js']
+    },
+    // mode: 'development'//设置mode
 }
