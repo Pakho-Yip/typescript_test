@@ -108,5 +108,5 @@ module.exports = {
     resolve: {
         extensions:['.ts','.js']
     },
-    // mode: 'development'//设置mode
+    mode: 'development'//设置mode
 }
