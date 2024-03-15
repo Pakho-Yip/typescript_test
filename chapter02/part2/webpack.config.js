@@ -20,7 +20,8 @@ module.exports = {
 
         // 告诉webpack不使用箭头
         environment:{
-            arrowFunction: false
+            arrowFunction: false,
+            const:false
         }
     },
 
