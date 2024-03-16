@@ -34,3 +34,9 @@ class Food{
         this.element.style.top = top+'px';
     }
 }
+
+// 测试代码
+// const food = new Food();
+// console.log(food.X,food.Y);
+// food.change();
+// console.log(food.X,food.Y);
